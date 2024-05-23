@@ -1,0 +1,154 @@
+
+Introdução
+
+CSS, ou Cascading Style Sheets, é a linguagem que usamos para dar estilo aos sites. Pense no HTML como a estrutura de um esqueleto, e o CSS como a roupa e maquiagem que fazem ele parecer incrível. Com CSS, você pode alterar cores, fontes, tamanhos e muito mais para deixar seu site bonito.
+
+CSS foi criado em 1996 pelo W3C (World Wide Web Consortium). Ele foi desenvolvido para separar o conteúdo (HTML) da apresentação (CSS),
+
+facilitando a manutenção e o design dos sites, tornando-os mais flexíveis e bonitos.
+
+Seletores CSS
+
+Os seletores CSS são usados para “encontrar” (ou selecionar) os elementos HTML que você deseja estilizar.
+
+Seletores, propriedades e valores são os três pilares do CSS. Seletores identificam os elementos que você quer estilizar. Propriedades são as características que você quer mudar, como cor ou tamanho da fonte. Valores são as configurações dessas propriedades. Por exemplo:
+
+
+css
+h1 {
+  color: blue; /* 'color' é a propriedade e 'blue' é o valor */
+}
+
+
+Podemos dividir os seletores CSS em cinco categorias:
+Seletores simples (selecione elementos com base no nome, id, classe)
+Seletores combinadores (selecionam elementos com base em um relacionamento específico entre eles)
+Seletores de pseudoclasse (selecionam elementos com base em um determinado estado)
+Seletores de pseudoelementos (selecionam e estilizam uma parte de um elemento)
+Seletores de atributos (selecionam elementos com base em um atributo ou valor de atributo).
+Seletores Simples:
+
+Esses são os básicos. Selecionam elementos por tag, classe ou ID.
+
+
+
+
+css
+p { color: green; } /* Seletor de tag */
+.myClass { font-size: 20px; } /* Seletor de classe */
+#myId { margin: 10px; } /* Seletor de ID */
+
+
+
+Seletores Combinadores:
+
+Combinam elementos de várias maneiras.
+
+
+css
+div p { color: red; } /* Seleciona todos os <p> dentro de <div> */
+h1 + p { margin-top: 0; } /* Seleciona o <p> imediatamente após <h1> */
+
+
+Seletores de Pseudoclasse:
+
+Estilizam elementos em estados específicos.
+css
+a:hover { color: orange; } /* Estiliza links quando o mouse está sobre eles */
+input:focus { border-color: blue; } /* Estiliza input quando está em foco */
+
+
+Seletores de Pseudoelementos:
+Estilizam partes específicas de um elemento.
+
+css
+p::first-line { font-weight: bold; } /* Estiliza a primeira linha de um parágrafo */
+div::before { content: "Nota: "; } /* Insere conteúdo antes do div */
+
+
+Seletores Universal:
+Estiliza todos os elementos da página.
+
+css
+* {
+  box-sizing: border-box;
+}
+
+Para incluir CSS em um documento HTML, você pode usar a tag <link> dentro da seção <head> do seu arquivo HTML.
+
+Aqui estão alguns exemplos:
+
+
+
+
+Link Externo: Se o seu CSS estiver em um arquivo separado (por exemplo, styles.css) na mesma pasta que o seu HTML:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Conteúdo do seu site aqui -->
+</body>
+</html>
+
+
+
+
+
+Estilos Embutidos: Você também pode incluir estis CSS diretamente na tag <style> dentro da seção <head> do seu HTML:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <style>
+        /* Estilos CSS aqui */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Conteúdo do seu site aqui -->
+</body>
+</html>
+
+Estilos Inline: Você também pode aplicar estilos diretamente a uma tag usando o atributo style:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+</head>
+<body>
+    <h1 style="color: green;">Título</h1>
+    <p style="font-size: 16px;">Este é um parágrafo com estilo inline.</p>
+</body>
+</html>
+
+Lembre-se de substituir "styles.css" pelo caminho do seu arquivo CSS, se estiver em um local diferente.
+Esses métodos permitem que você adicione estilo ao seu HTML e melhore a aparência do seu site!
+
+Conclusão
+Curtiu esse conteúdo? Foi gerado por inteligência artificial 
+e revisado por alguém 100% humano, se quiser conectar-se comigo, siga me no Linkedin
+
+
+Fontes de Produção:
+
+Ilustração de capa: gerado por lexica.art e diagramado no Power Point.
+
+Conteúdo gerado por : Chatgpt e revisado por humano.
